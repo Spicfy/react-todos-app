@@ -2,8 +2,8 @@ function TodoRowItem(props){
 
     return( //Must only return one thing
 
-        <tr>
-            <th scope='row'>{props.rowNumber}</th>
+        <tr onClick={() => props.deleteTodo(props.rowNumber)}>
+            <th scope="row">{props.rowNumber}</th>
             <td>{props.rowDescription}</td>
             <td>{props.rowAssigned}</td>
 
